@@ -9,10 +9,10 @@ import requests, bs4, time, smtplib
 #always true -> loop to check if button is still the same.
 while True:
     url = "http://en.intelextrememasters.com/season-12/oakland/pubg/"
-    #imitate a browser
-    headers = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36'}
-    # download the homepage
+
+    #download the homepage
     request_url = requests.get(url)
+    
     #downloads the website
     request_page = bs4.BeautifulSoup(request_url.text)
 
