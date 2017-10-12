@@ -8,5 +8,5 @@ def sms():
 
     client.messages.create(to="+number",
                         from_="+number",
-                        body="Hello from Python!")
+                        body="Check the Tournament http://en.intelextrememasters.com/season-12/oakland/pubg/")
     print("SMS send")
